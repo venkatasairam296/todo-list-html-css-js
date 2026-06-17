@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1 class="head-name">TODO</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Completed</a></li>
+        <li><a href="#">Incompleted</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="inputs">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search List">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="theme-btns">
+        <button class="dark-mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <button class="light-mode">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+      </div>
+    </div>
+
+    <ul class="todo" id="todo-list">
+      <li class="task-card">
+        <p>First List</p>
+
+        <div class="task-btns">
+          <button class="done-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+
+          <button class="edit-btn">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+
+          <button class="delete-btn">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </li>
+
+      <li class="task-card">
+        <p>Second List</p>
+
+        <div class="task-btns">
+          <button class="done-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+
+          <button class="edit-btn">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+
+          <button class="delete-btn">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </li>
+
+      <li class="task-card">
+        <p>Thrid List</p>
+
+        <div class="task-btns">
+          <button class="done-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+
+          <button class="edit-btn">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+
+          <button class="delete-btn">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+
+    <div class="new-task">
+      <button class="new-task-btn" id="new-task-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+
+    <section class="new-task-page">
+      <h2>New Task Page</h2>
+
+      <div class="task-input">
+        <input type="text" id="task-ipt" placeholder="Write your new Task">
+      </div>
+
+      <button id="cancel-btn" class="cancel-btn">Cancel</button>
+      
+      <button id="add-task-btn" class="add-btn">Add Task</button>
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="index.js"></script>
+</body>
+</html>
