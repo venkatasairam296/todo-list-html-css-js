@@ -23,24 +23,33 @@
   <main>
 
     <div class="inputs">
-      <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search List">
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="todo-inputs">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search List">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+  
+        <div class="theme-btns">
+          <button class="dark-mode">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+  
+          <button class="light-mode">
+            <i class="fa-regular fa-sun"></i>
+          </button>
+        </div>
       </div>
 
-      <div class="theme-btns">
-        <button class="dark-mode">
-          <i class="fa-regular fa-moon"></i>
-        </button>
-
-        <button class="light-mode">
-          <i class="fa-regular fa-sun"></i>
-        </button>
+      <div class="task-stats">
+        <p>Total: <span id="total-cnt">0</span></p>
+        <p>Completed: <span id="completed-cnt">0</span></p>
+        <p>Pending: <span id="pending-btn">0</span></p>
       </div>
     </div>
 
     <ul class="todo" id="todo-list">
-      <li class="task-card">
+      <!-- Hard code for test and design -->
+      <!-- <li class="task-card">
         <p>First List</p>
 
         <div class="task-btns">
@@ -92,7 +101,7 @@
             <i class="fa-solid fa-x"></i>
           </button>
         </div>
-      </li>
+      </li> -->
     </ul>
 
     <div class="new-task">
@@ -101,20 +110,25 @@
       </button>
     </div>
 
-    <section class="new-task-page">
+  </main>
+  <section id="new-task-page" class="new-task-page hidden">
+    <div class="new-page-content">
       <h2>New Task Page</h2>
 
       <div class="task-input">
         <input type="text" id="task-ipt" placeholder="Write your new Task">
       </div>
-
-      <button id="cancel-btn" class="cancel-btn">Cancel</button>
       
-      <button id="add-task-btn" class="add-btn">Add Task</button>
-    </section>
-  </main>
+      <div class="new-page-btns">
+        <button id="cancel-btn" class="cancel-btn">Cancel</button>
+        
+        <button id="add-task-btn" class="add-btn">Add Task</button>
+      </div>
+    </div>
+  </section>
 
   <footer></footer>
   <script src="index.js"></script>
 </body>
 </html>
+
