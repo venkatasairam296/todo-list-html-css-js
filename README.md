@@ -1,14 +1,16 @@
 # TODO List Project
 
-This is a simple responsive todo list project built with HTML, CSS, and vanilla JavaScript. It includes a task layout, search bar, theme buttons, and action buttons for each task card.
+This is a responsive todo list project built with HTML, CSS, and vanilla JavaScript. The app now includes working task interactions and an improved UI flow.
 
 ## About the Project
 
+- Add new tasks through a popup form
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed with visual feedback
+- Live search filter for task cards
 - Responsive layout for desktop and mobile
-- Search input for filtering tasks visually
-- Dark and light theme buttons in the UI
-- Task cards with complete, edit, and delete actions
-- Floating button to open the new task section
+- Floating add-task button and modal-based task input
 
 ## Tech Stack
 
@@ -24,13 +26,18 @@ This is a simple responsive todo list project built with HTML, CSS, and vanilla 
 - `style.css` - page styling and responsive layout
 - `index.js` - JavaScript behavior
 
-## How To Execute The Project
+## How To Run The Project
 
 1. Clone the repository from GitHub.
 2. Open the project folder in VS Code.
-3. Run the project by opening `index.html` in your browser, or use Live Server if it is installed.
-4. Test the layout, buttons, and responsive view.
+3. Open `index.html` directly in your browser,
+   or run it using the Live Server extension.
+4. Use the add-task button to create tasks, then test edit, delete, complete, and search features.
 
-## Current Status
+## Features Implemented
 
-This version focuses on the frontend UI and basic interaction setup. JavaScript functionality can be expanded next to support task CRUD, search filtering, and theme switching.
+- Popup task form with add and cancel actions
+- Task card controls: complete, edit, delete
+- Completed-state styling with line-through effect
+- Real-time search filtering
+- Responsive UI adjustments for smaller screens
