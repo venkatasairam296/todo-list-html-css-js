@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-  --light-theme : #F7F7F7;
-  --dark-theme : #252525;
-  --primary : #6C63FF;
-  --search-box : #C3C1E5;
+  --bg-color: #F7F7F7;
+  --surface-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #cccccc;
+  --primary: #6C63FF;
 }
 
 html{
@@ -23,7 +24,7 @@ button{
 }
 
 header{
-  background: var(--light-theme);
+  background: var(--bg-color);
   /* border: 2px solid red; */
   min-height: 80px;
   height: auto;
@@ -31,6 +32,10 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+}
+
+header .head-name{
+  color: var(--text-color);
 }
 
 nav ul{
@@ -48,7 +53,7 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -58,7 +63,7 @@ nav ul li a:hover{
 }
 
 main{
-  background: var(--light-theme);
+  background: var(--bg-color);
   /* border: 2px solid red; */
   min-height: calc(100dvh - 80px);
   padding: 4rem 3rem;
@@ -68,7 +73,7 @@ main{
 }
 
 .inputs{
-  background: white;
+  background: var(--surface-color);
   /* border: 2px solid red; */
   width: 500px;
   height: auto;
@@ -88,7 +93,7 @@ main{
 }
 
 .search-bar{
-  border: 2px solid #ccc;
+  border: 2px solid var(--border-color);
   /* background: var(--search-box); */
   width: 100%;
   max-width: 300px;
@@ -103,7 +108,8 @@ main{
 
 .search-bar input{
   /* border: 2px solid red; */
-  /* background: var(--search-box); */
+  background: var(--surface-color);
+  color: var(--text-color);
   flex: 1;
   padding: .8rem .5rem;
   border: none;
@@ -132,15 +138,21 @@ main{
   border: none;
 }
 
+.task-stats{
+  color: var(--text-color);
+}
+
 .todo{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  justify-content: center;
   gap: 20px;
 }
 
 .task-card{
   /* border: 2px solid red; */
-  background: white;
+  background: var(--surface-color);
+  color: var(--text-color);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -182,6 +194,7 @@ main{
 
 .new-task-page{
   /* border: 2px solid red; */
+  color: var(--text-color);
   height: calc(100dvh - 80px);
   width: 100%;
   display: flex;
@@ -194,7 +207,7 @@ main{
 
 .new-page-content{
   /* border: 2px solid red; */
-  background: white;
+  background: var(--surface-color);
   width: 500px;
   height: 400px;
   display: flex;
@@ -217,8 +230,10 @@ main{
 
 .task-input input{
   width: 100%;
+  background: var(--surface-color);
+  color: var(--text-color);
   padding: .8rem .5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   outline: none;
   border-radius: 12px;
 }
