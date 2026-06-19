@@ -1,16 +1,19 @@
 # TODO List Project
 
-This is a responsive todo list project built with HTML, CSS, and vanilla JavaScript. The app now includes working task interactions and an improved UI flow.
+This is a completed responsive Todo List application built with HTML, CSS, and vanilla JavaScript. It supports full task management, filtering, counters, and persistent user preferences.
 
-## About the Project
+## Project Highlights
 
-- Add new tasks through a popup form
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as completed with visual feedback
-- Live search filter for task cards
+- Full CRUD support (Create, Read, Update, Delete)
+- Search tasks in real time
+- Filter tasks by status
+- Task counters (Total, Completed, Pending)
+- Event delegation for efficient action handling
+- Local storage support for task persistence
+- Theme switching (light and dark)
+- Theme persistence after page refresh
+- Reusable JavaScript functions for cleaner structure
 - Responsive layout for desktop and mobile
-- Floating add-task button and modal-based task input
 
 ## Tech Stack
 
@@ -23,8 +26,8 @@ This is a responsive todo list project built with HTML, CSS, and vanilla JavaScr
 ## Project Structure
 
 - `index.html` - main page structure
-- `style.css` - page styling and responsive layout
-- `index.js` - JavaScript behavior
+- `style.css` - styling, responsive layout, and theme-related UI styles
+- `index.js` - app logic for CRUD, search, filters, counters, local storage, and theme persistence
 
 ## How To Run The Project
 
@@ -32,12 +35,33 @@ This is a responsive todo list project built with HTML, CSS, and vanilla JavaScr
 2. Open the project folder in VS Code.
 3. Open `index.html` directly in your browser,
    or run it using the Live Server extension.
-4. Use the add-task button to create tasks, then test edit, delete, complete, and search features.
+4. Add, edit, delete, search, and filter tasks.
+5. Refresh the page to verify task and theme persistence.
 
-## Features Implemented
+## Demo
 
-- Popup task form with add and cancel actions
-- Task card controls: complete, edit, delete
-- Completed-state styling with line-through effect
-- Real-time search filtering
-- Responsive UI adjustments for smaller screens
+- App Screenshot: add your image link here
+- Task Flow GIF (CRUD + Filters + Search): add your GIF link here
+- Theme Toggle Demo: add your short video/GIF link here
+
+Example format:
+
+![Todo App Screenshot](./assets/todo-screenshot.png)
+
+## Core Features
+
+- Create tasks
+- Read and display tasks
+- Update task text
+- Delete tasks
+- Mark tasks as completed
+- Search tasks
+- Filter tasks
+- Show total/completed/pending counters
+- Persist tasks in local storage
+- Switch themes
+- Persist theme preference
+
+## Status
+
+Project completed as Day-6 milestone in the learning journey.
