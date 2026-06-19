@@ -40,13 +40,12 @@ This is a completed responsive Todo List application built with HTML, CSS, and v
 
 ## Demo
 
-- App Screenshot: add your image link here
+- App Screenshot
+
+![Todo App Screenshot](assets/todo_ss.png)
+
 - Task Flow GIF (CRUD + Filters + Search): add your GIF link here
 - Theme Toggle Demo: add your short video/GIF link here
-
-Example format:
-
-![Todo App Screenshot](./assets/todo-screenshot.png)
 
 ## Core Features
 
